@@ -18,21 +18,6 @@ function create_default_doc(sequence project_name)
     return 0
 end function
 
-public function create_app_project(map:map opts)
---    bin/ - compiled binaries (*.dll, .exe, *.so)
---    build/ - translated files (*.c, *.h, *.mak)
---    demo/ - demos/examples (*.ex)
---    dist/ - distribution files (*.zip)
---    docs/ - documentation (*.html, etc.)
---    include/ - include files (*.e)
---    resources/ - static resources (*.png, etc.)
---    src/ - project source files (*.ex)
---    test/ - unit testing files (t_*.e)
---    Makefile - the Makefile to translate and build the application 
-
-    return 0
-end function 
-
 public function create_lib_project(map:map opts)
     create_directory("extsrc")
     create_file("extsrc/Makefile")

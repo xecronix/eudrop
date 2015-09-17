@@ -1,0 +1,61 @@
+=Configuration file eudrop.xml
+==Tag: author
+Metadata about the EuDrop author
+====Attributes
+*company - Company
+*first - First name
+*last -  Last/family name
+*middle - Middle name
+*nick   - Nickname
+*website - Website for the author (not nessarily the EuDrop)
+*email  - e-mail address
+*gavatar - e-mail address associated with a gravatar
+
+==== Value
+None
+
+==== Example
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+<eudrop>
+...
+<authors> **TODO:Document Me**
+	<author 
+		first   = "Ronald" 
+		last    = "Weidner"
+		company = "Techport80"
+		website = "http://www.techport80.com" />
+</authors>
+...
+</eudrop>
+}}}
+
+==Tag: project
+Metadata about the EuDrop author
+====Attributes
+*url - Project Url
+*version - Version
+*name - Name
+
+==== Value
+*Tag: short - Short teaser description (one sentence) about the project **TODO:Document Me**
+*Tag: description - Detailed creole markup of the about the project **TODO:Document Me**
+*Tag: platform  - The target platform for the EuDrop **TODO:Document Me**
+
+==== Example
+{{{
+<?xml version="1.0" encoding="UTF-8"?>
+<eudrop>
+...
+<project url="https://www.github.com/xecronix/eudrop/" version="master" name="EuDrop">
+<short default_lang="enUS">
+	 <lang code="enUS">Euphoria Library Management System</lang>
+</short>
+<description default_lang="enUS">
+	<lang code="enUS">Designed Euphoria Eudrop Library Management System easy access to libs and utils for the entire community.</lang>
+</description>
+<platform target="all" />
+...
+</eudrop>
+}}}
+
