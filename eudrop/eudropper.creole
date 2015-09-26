@@ -1,0 +1,23 @@
+%%disallow={camelcase}
+
+!!CONTEXT:eudropper.e
+!!namespace:eudropper
+%%output = eudropper.e
+
+@[:eudropper:create_project|]
+==== create_project
+<eucode>
+include eudropper.e
+namespace eudropper
+public function create_project(map :map opts)
+</eucode>
+
+  Creates a new EuDrop project
+===== Parameters:
+##opts## : A map of options for building the project
+===== Supported Options:
+||Option||What it's for||Default Value||
+|project_name|The name of the project|eudropper|
+|project_path|Full path where the project should be built|Current working directory|
+
+
